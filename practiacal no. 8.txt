@@ -1,0 +1,5 @@
+void setup() {
+
+Serial.begin(9600); Serial.println("Enter a number:"); }
+
+void loop() { while (!Serial.available()); int number = Serial.parseInt(); Serial.print("Square: "); Serial.println(number* number); }
